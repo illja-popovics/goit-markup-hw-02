@@ -4,38 +4,49 @@
     --button-link-active-cl: #404bbf;
     --footer-white-cl: #f4f4fd;
     --logo-button-purple-cl: #4d5ae5;
+    --subheader-description-cl: #434455;
+    --base-fonts: Roboto, sans-serif;
 
 }
 body {
-    font-family: Roboto, sans-serif;
+    font-family: var(--base-fonts);
     background-color: #fff;
     line-height: 1.5;
-    font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.02em;
     color:var(--primary-text-cl)
 }
 
-ul,ol,a {
+ul,ol {
     list-style: none;
+    text-decoration: none;
+}
+a {
     text-decoration: none;
 }
 
 button {
     cursor: pointer;
+    font-family: Roboto, sans-serif;
 }
-
 .hero {
     background-color: var(--primary-header-background-cl);
+}
+.hero-title {
     color: #fff;
     text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
 }
 
 .hero-button {
-    background-color: #4d5ae5;
+    background-color: var(--logo-button-purple-cl);
     font-weight: 500;
     letter-spacing: 0.04em;
     color: #fff;
+    font-family: Roboto, sans-serif;;
+    line-height: 1.5;
 }
 
 a:hover {
@@ -91,10 +102,21 @@ footer {
     visibility: hidden;
 }
 .section-team {
-    background-color: #f4f4fd;
+    background-color: var(--footer-white-cl);
     text-align: center;
 }
 
+.team-subheader {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--primary-header-background-cl);
+}
+
+.team-description {
+    font-size: 16px;
+    color: var(--subheader-description-cl);
+}
 
 .section-header {
     font-weight: 700;
@@ -102,7 +124,7 @@ footer {
     line-height: 1.11111;
     text-transform: capitalize;
     text-align: center;
-    color: #2e2f42;
+    color: var(--primary-header-background-cl);
 }
 .section-subheader {
     font-weight: 500;
@@ -111,7 +133,7 @@ footer {
     color: var(--primary-header-background-cl);
 }
 .subheader-description {
-    color: #434455;
+    color: var(--subheader-description-cl);
 }
 
 .portfolio-button {
@@ -121,7 +143,13 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    background-color: #f4f4fd;
+    background-color: var(--footer-white-cl);
+    font-family: var(--base-fonts);
+}
+
+.portfolio-description {
+    font-size: 16px;
+    color: var(--subheader-description-cl);
 }
 
 .portfolio-button:hover{
